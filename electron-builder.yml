@@ -1,0 +1,51 @@
+appId: 'DBLLauncher'
+productName: 'DongByeongLi Launcher'
+artifactName: 'DongByeongLi-Launcher-setup-${version}.${ext}'
+
+copyright: 'Copyright © 2024 DongByeongLi'
+
+asar: true
+compression: 'maximum'
+
+files:
+  - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,.eslintrc.json}'
+
+extraResources:
+  - 'libraries'
+
+# Windows Configuration
+win: 
+  target: 
+    - target: 'nsis'
+      arch: 'x64'
+
+# Windows Installer Configuration
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+
+# macOS Configuration
+mac:
+  target:
+    - target: 'dmg'
+      arch:
+        - 'x64'
+        - 'arm64'
+  artifactName: 'DongByeongLi-Launcher-setup-${version}-${arch}.${ext}'
+  category: 'public.app-category.games'
+
+# Linux Configuration
+linux: 
+  target: 'AppImage'
+  maintainer: 'Shisuys'
+  vendor: 'Laru Studios launcher'
+  synopsis: 'A minecraft launcher'
+  description: 'Custom launcher made by shisuys, to support all Laru Studios Projects.'
+  category: 'Game'
+
+
+directories:
+  buildResources: 'build'
+  output: 'dist'

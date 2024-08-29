@@ -1,0 +1,24 @@
+[ejs.app]
+title = "동병리 런처"
+
+[ejs.landing]
+mediaGitHubURL = "https://github.com/DonghyeonLee03/DongByeongLi-Launcher"
+mediaTwitterURL = "#"
+mediaInstagramURL = "#"
+mediaWebsiteURL = "#"
+mediaYouTubeURL = "https://www.youtube.com/channel/UCQJuZxeDv2P05YHcC-tIEVQ"
+mediaDiscordURL = "https://discord.gg/3ze4FMREWR"
+
+[ejs.settings]
+sourceGithubLink = "https://github.com/DonghyeonLee03/DongByeongLi-Launcher"
+supportLink = "https://github.com/DonghyeonLee03/DongByeongLi-Launcher/issues"
+
+[ejs.welcome]
+welcomeHeader = "웰컴투 동병리"
+welcomeDescription = """
+드디어 동병리 서버가 열렸습니다!!!
+
+이 런처는 서버에 필요한 모드와 리소스팩을 자동으로 다운로드해줍니다.
+
+지속적인 업데이트로 다양한 기능들이 추가 될 수도 있습니다.
+"""
